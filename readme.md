@@ -5,7 +5,7 @@ yarn eslint --init
 	- To check syntax and find problems
 	- JavaScript modules (import/export)
 	- React
-	- Does your project use TypeScript? No
+	- Does your project use TypeScript? ?
 	- Browser
 	- JSON
 
