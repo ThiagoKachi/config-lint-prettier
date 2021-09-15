@@ -5,12 +5,12 @@ yarn eslint --init
 	- To check syntax and find problems
 	- JavaScript modules (import/export)
 	- React
-	- Does your project use TypeScript? ?
+	- Does your project use TypeScript? yes
 	- Browser
 	- JSON
 
 ```
-yarn add --dev eslint-plugin-react@latest eslint@latest
+yarn add --dev eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint@latest
 ```
 ```
 yarn add eslint-plugin-react-hooks --dev
@@ -33,7 +33,9 @@ yarn add eslint-plugin-react-hooks --dev
  ],
  "rules":  {
 	 "react-hooks/rules-of-hooks":  "error",
-	 "react-hooks/exhaustive-deps":  "warn"
+	 "react-hooks/exhaustive-deps":  "warn",
+	 "react/prop-types": "off",
+	 "@typescript-eslint/explicit-module-boundary-types": "off"
  }
 }
 ```
@@ -67,7 +69,7 @@ yarn add --dev eslint-plugin-prettier eslint-config-prettier
 {
 	"editor.formatOnSave":  false,
 	"editor.codeActionsOnSave": {
-	"source.fixAll.eslint":  true
+		"source.fixAll.eslint":  true
 	}
 }
 ```
