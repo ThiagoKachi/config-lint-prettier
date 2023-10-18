@@ -75,7 +75,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-im
 
 ```
 
-## Iniciar o Prettier
+## Configurar o Prettier
 
 ```
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
