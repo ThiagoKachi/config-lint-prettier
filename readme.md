@@ -88,3 +88,53 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
   "singleQuote": true
 }
 ```
+
+## Configurar o lint-staged
+
+```
+yarn add -D lint-staged
+```
+
+<h4>Na raiz do projeto criar arquivo .lintstagedrc.json e colocar o código a seguir dentro</h4>
+
+```
+{
+  "*.{ts, tsx}": [
+    "prettier --write"
+  ]
+}
+```
+
+## Configurar o husky
+
+```
+npx husky-init
+
+yarn
+```
+
+<h4>Adicionar o comando a seguir no arquivo de pre-commit do husky</h4>
+
+```
+yarn lint-staged
+```
+
+## Configurar o Conventional Commits
+
+```
+yarn add -D @commitlint/{cli,config-conventional}
+```
+
+<h4>Na raiz do projeto criar arquivo .commitlintrc e colocar o código a seguir dentro</h4>
+
+```
+{
+  "extends": ["@commitlint/config-conventional"]
+}
+```
+
+<h4>Executar seguinte comando:</h4>
+
+```
+yarn husky add .husky/commit-msg 'yarn commitlint --edit ${1}'
+```
