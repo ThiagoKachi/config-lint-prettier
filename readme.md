@@ -2,7 +2,7 @@
 ```
 yarn create @eslint/config
 ```
-	- To check syntax and find problems
+	- To check syntax, find problems, and enforce code style
 	- JavaScript modules (import/export)
 	- React
 	- Does your project use TypeScript? no
