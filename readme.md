@@ -49,6 +49,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-im
       }
     },
     "rules": {
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
       "import/prefer-default-export": "off",
       "prettier/prettier": "error",
       "react/react-in-jsx-scope": "off",
