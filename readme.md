@@ -1,6 +1,8 @@
 ## Iniciar o ESLint
 ```
 yarn create @eslint/config
+
+npm init @eslint/config
 ```
 	- To check syntax, find problems, and enforce code style
 	- JavaScript modules (import/export)
@@ -15,6 +17,8 @@ yarn create @eslint/config
 <h3>Instalar libs necessárias</h3>
 
 ```
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
+
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
 ```
 <h3> Arquivo .eslint.json</h3>
@@ -80,6 +84,8 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-im
 
 ```
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 <h4>Na raiz do projeto criar arquivo .prettierrc e colocar o código a seguir dentro</h4>
@@ -94,6 +100,8 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 
 ```
 yarn add -D lint-staged
+
+npm i -D lint-staged
 ```
 
 <h4>Na raiz do projeto criar arquivo .lintstagedrc.json e colocar o código a seguir dentro</h4>
@@ -111,19 +119,23 @@ yarn add -D lint-staged
 ```
 npx husky-init
 
-yarn
+yarn ou npm i
 ```
 
 <h4>Adicionar o comando a seguir no arquivo de pre-commit do husky</h4>
 
 ```
 yarn lint-staged
+
+npx lint-staged
 ```
 
 ## Configurar o Conventional Commits
 
 ```
 yarn add -D @commitlint/{cli,config-conventional}
+
+npm i -D @commitlint/{cli,config-conventional}
 ```
 
 <h4>Na raiz do projeto criar arquivo .commitlintrc e colocar o código a seguir dentro</h4>
